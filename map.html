@@ -1,0 +1,143 @@
+<!-- Apartat del Mapa. Aquesta secció mostra la localització dels diversos parcs i espais verds de 
+la ciutat de Salou. Aquesta visualització cartogràfica pot ser útil per als usuaris 
+interessats a conèixer més sobre els espais verds disponibles al municipi. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mapa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="icon" href="fotos/icona_inici.png">
+  <!-- Estils css -->
+  <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+  <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+  <link rel="stylesheet" type="text/css" href="css/map.css"/>
+  <link rel="stylesheet" type="text/css" href="css/cookies.css"/>
+  <!-- Estils js -->
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/cookies.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  <!-- Estils css per al mapa QGIS -->
+  <link rel="stylesheet" href="css/cssmap/leaflet.css">
+  <link rel="stylesheet" href="css/cssmap/L.Control.Layers.Tree.css">
+  <link rel="stylesheet" href="css/cssmap/qgis2web.css">
+  <link rel="stylesheet" href="css/cssmap/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/cssmap/leaflet-measure.css">
+  <!-- Estils js per al mapa QGIS -->
+  <script src="js/jsmap/qgis2web_expressions.js"></script>
+  <script src="js/jsmap/leaflet.js"></script>
+  <script src="js/jsmap/L.Control.Layers.Tree.min.js"></script>
+  <script src="js/jsmap/leaflet-hash.js"></script>
+  <script src="js/jsmap/Autolinker.min.js"></script>
+  <script src="js/jsmap/leaflet-measure.js"></script>
+  <script src="map/data/reesdelsparcs_1.js"></script>
+  <script src="map/data/Parcsverds_2.js"></script>
+</head>
+<body onload="loadDarkMode()"> <!-- Carrega el mode fosc quan la pàgina es carrega -->
+  <!-- Barra de navegació superior -->
+  <div class="topnav" id="Controlbarra">
+    <!-- Links -->
+    <a href="index.html" class="active logo"></a>
+    <a href="index.html">Home</a>
+    <a href="memberships.html">Membres</a>
+    <a href="projects.html">Projectes</a>
+    <a href="map.html" class="actual">Mapes</a>
+    <a href="contact.html">Contact</a>
+    <!-- Icona per activar/desactivar el mode fosc -->
+    <i id="toggleDarkModeIcon" class="dark-mode-icon fas fa-moon" onclick="toggleDarkMode()"></i>
+     <!-- Icona del menú mòbil -->
+    <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveNavbar()">&#9776;</a>
+  </div>
+  <div class="parallax"></div>
+  <!-- Contenidor per al text inicial -->
+  <div class="containerinici">
+    <h1 class="titol-font">Resultat de l'estudi de les zones verdes</h1>
+    <p class="text-fontinici">
+      Pel que fan les conclusions del nostre treball relacionat amb els 
+      espais verds del municipi de Salou destacar com després d’analitzar 
+      totes les zones verdes del municipi a més de esmentar també quines 
+      són les mesures de protecció que s’ha apliquen, podem arribar a la 
+      conclusió de que aquestes zones juguen un paper clau en el desenvolupament 
+      del municipi ja que tal i com hem esmentat en apartats anteriors 
+      aquestes zones aporten una sèrie de beneficis tant per al territori 
+      com en la salut i el benestar dels ciutadans. Així mateix, s’ha de 
+      destacar com l’importància de les zones verdes pot contribuir en la 
+      biodiversitat d’espècies a més de també condicionar el tipus de clima 
+      a nivell local. 
+    </p>
+  </div>
+  <!-- Contenidor per al mapa i el text principal -->
+  <div class="container">
+    <div class="row2">
+      <!-- Columna amb amplada del 66.66666% -->
+      <div class="column-66">
+        <div id="map" class="map"></div>
+      </div>
+      <!-- Columna amb amplada del 33.33333% -->
+      <div class="column-33">
+        <p class="text-font">
+          En quant a les mesures de protecció es refereix, s’ha observat 
+          com existeixen diverses mesures de protecció les quals tenen com 
+          a finalitat protegir i conservar els diferents espais. Això inclou 
+          des de plans d'ordenació urbana fins a plans específics de protecció 
+          dels espais litorals, passant alhora per campanyes de sensibilització 
+          i accions de seguiment i control.</p>
+        <p class="text-font">
+          En general, podem afirmar que el grau de vitalitat del les zones verdes 
+          al municipi de Salou és bastant alt gràcies a les mesures de protecció i 
+          conservació que s’apliquen. No obstant, sempre hi ha la possibilitat de 
+          millora, com ara l'ampliació de les zones verdes i la millora de la seva connectivitat.
+        </p>
+        <p class="text-font">
+          També les zones verdes són un element clau per al turisme de la ciutat, 
+          ja que en alguns casos atrauen visitants els quals poden passar més temps 
+          en aquestes zones, a més de fomentar la seva satisfacció general amb la seva 
+          experiència al municipi. 
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--Peu de pàgina-->
+  <footer class="footer">
+    <div class="group-1">
+      <div class="angle-box">
+        <figure>
+          <a href="#">
+            <img src="fotos/logo_URV.png" alt="Logo URV">
+          </a>
+        </figure>
+      </div>
+      <div class="angle-box">
+        <h2>NOSALTRES</h2>
+        <p>Empresa compromesa amb la qualitat i la innovació</p>
+        <p>Tel. 977 777 666</p> 
+      </div>
+      <div class="angle-box">
+        <h2>SEGUEIX-NOS</h2>
+        <div class="social-angle">
+          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+          <a href="https://twitter.com/" class="fa fa-twitter"></a>
+          <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        </div>
+      </div>
+    </div>
+    <div class="group-2">
+      <small>&copy; 2024 <b>PVS S.L.</b> - <a href="drets.html" class="drets">Tots els Drets Reservats</a>.</small> 
+    </div>
+  </footer>
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><i class="arrow up"></i></button> <!-- Botó de retonr a dalt -->
+  <div id="cookie-message">
+    Aquest lloc web utilitza cookies per millorar l'experiència de l'usuari. En continuar utilitzant 
+    aquest lloc, acceptes el nostre ús de <a href="pol_cookies.html">cookies</a>.
+    <button id="accept-cookie">Acceptar</button>
+    <button id="denegar-cookie">Denegar</button>
+  </div>
+  <script src="js/map.js"></script>
+</body>
+</html>

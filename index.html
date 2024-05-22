@@ -1,0 +1,131 @@
+<!-- Apartat de Home o Index. Aquesta secció proporciona una visió general del projecte, incloent-hi 
+informació sobre els seus objectius i propòsits. S'hi pot trobar un resum del 
+projecte i detalls rellevants sobre les seves intencions i metes. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="fotos/icona_inici.png">
+  <!-- Estils css -->
+  <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+  <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css"/>
+  <link rel="stylesheet" type="text/css" href="css/cookies.css"/>
+  <!-- Estils js -->
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/cookies.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body onload="loadDarkMode()"> <!-- Carrega el mode fosc quan la pàgina es carrega -->
+  <!-- Barra de navegació superior -->
+  <div class="topnav" id="Controlbarra">
+    <!-- Links -->
+    <a href="index.html" class="active logo"></a>
+    <a href="index.html" class="actual">Home</a>
+    <a href="memberships.html">Membres</a>
+    <a href="projects.html">Projectes</a>
+    <a href="map.html">Mapes</a>
+    <a href="contact.html">Contact</a>
+    <!-- Icona per activar/desactivar el mode fosc -->
+    <i id="toggleDarkModeIcon" class="dark-mode-icon fas fa-moon" onclick="toggleDarkMode()"></i>
+     <!-- Icona del menú mòbil -->
+    <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveNavbar()">&#9776;</a>
+  </div>
+  <!-- Divisió per a l'efecte parallax -->
+  <div class="parallax"></div>
+  <!-- Contenidor principal -->
+  <div class="container">
+    <div class="row2">
+      <!-- Columna amb amplada del 66.66666% -->
+      <div class="column-66">
+        <span class="intro-font">Informació</span>
+        <h1 class="large-font"><b>Projecte PVS</b></h1>
+        <p class="text-font">
+          Aquest és un projecte d'investigació titulat '<b class="text-span">Pulmó Verd de Salou</b>' (PVS), 
+          el qual té com a objectiu destaca la importància vital dels espais verds al 
+          municipi de Salou, considerant-los com a "pulmons" essencials que alimenten 
+          la vida de la ciutat. Aquesta iniciativa busca analitzar i promoure els espais 
+          verds del municipi com a elements clau per al benestar de la població i la sostenibilitat
+          ambiental. A més, el projecte s'ocupa d'avaluar l'estat
+          actual dels espais verds i les seves problemàtiques, amb la finalitat de proposar
+          mesures de protecció i millora per a garantir la seva conservació a llarg termini.
+        </p>
+      </div>
+      <!-- Columna amb amplada del 33.33333% -->
+      <div class="column-33">
+          <img src="fotos/Img2.png" width="335" height="471">
+      </div>
+    </div>
+  </div>
+  <!-- Divisió per a l'efecte parallax -->
+  <!-- Contenidor principal 2 -->
+  <div class="container2">
+    <span class="intro-font">Resum</span>
+    <!-- Text introductori amb estil de font específic -->
+    <p class="text-font">
+      El treball té com a objectiu estudiar les zones verdes de la ciutat de Salou, 
+      així com les seves problemàtiques i les mesures de protecció que s'apliquen 
+      per evitar la seva degradació. S'ha estudiat la història de les zones verdes de 
+      Salou, destacant la seva importància i evolució al llarg del temps, i s'ha comprovat 
+      que les zones verdes són un element fonamental per a la millora de la qualitat de 
+      vida dels ciutadans i per al manteniment dels ecosistemes urbans. Les zones verdes 
+      són elements molt importants, per això es fan anàlisis sobre el seu estat actual, 
+      les seves problemàtiques i les mesures de protecció per evitar la seva degradació.
+    </p>
+    <br>
+    <span class="intro-font">Detalls del projecte PVS</span>
+    <!-- Llista amb estil de font específic -->
+    <ul class="text-font">
+      <li><b>Referencia:</b> XXX-XXXXX-XXX</li>
+      <li><b>Investigador principal:</b> Oriol Boronat Fernàndez</li>
+      <li><b>Entitat solicitant:</b> Universitat Rovira i Virgili</li>
+      <li><b>Centre:</b> Departament de Grografía</li>
+      <li><b>Títol:</b> Pulmó Verd a Salou</li>
+      <li><b>Duració:</b> 1 any (2023 - 2024)</li>
+      <li><b>Paraules clau:</b> zones verdes, Salou, mesures de protecció, ecosistemes urbans, conservació, vitalitat.</li>
+    </ul>  
+  </div>
+  <!--Peu de pàgina-->
+  <footer class="footer">
+    <div class="group-1">
+      <div class="angle-box">
+        <figure>
+          <a href="#">
+            <img src="fotos/logo_URV.png" alt="Logo URV">
+          </a>
+        </figure>
+      </div>
+      <div class="angle-box">
+        <h2>NOSALTRES</h2>
+        <p>Empresa compromesa amb la qualitat i la innovació</p>
+        <p>Tel. 977 777 666</p> 
+      </div>
+      <div class="angle-box">
+        <h2>SEGUEIX-NOS</h2>
+        <div class="social-angle">
+          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+          <a href="https://twitter.com/" class="fa fa-twitter"></a>
+          <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        </div>
+      </div>
+    </div>
+    <div class="group-2">
+      <small>&copy; 2024 <b>Oriol Boronat Fernàndez</b> - <a href="drets.html" class="drets">Tots els Drets Reservats</a>.</small> 
+    </div>
+  </footer>
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><i class="arrow up"></i></button> <!-- Botó de retonr a dalt -->
+  <!-- Missatge cookies -->
+  <div id="cookie-message">
+    Aquest lloc web utilitza cookies per millorar l'experiència de l'usuari. En continuar utilitzant 
+    aquest lloc, acceptes el nostre ús de <a href="pol_cookies.html">cookies</a>.
+    <button id="accept-cookie">Acceptar</button>
+    <button id="denegar-cookie">Denegar</button>
+  </div>
+</body>
+</html>

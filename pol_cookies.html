@@ -1,0 +1,101 @@
+<!-- Apartat de Polítiques de Cookies. Aquesta secció important de molts llocs 
+web, ja que permet informar els usuaris sobre l'ús de cookies i obtenir el seu 
+consentiment per emmagatzemar-les als dispositius. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Política de Cookies</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="fotos/icona_inici.png">
+  <!-- Estils css -->
+  <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+  <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+  <link rel="stylesheet" type="text/css" href="css/pol_cookies.css"/>
+  <link rel="stylesheet" type="text/css" href="css/cookies.css"/>
+  <!-- Estils js -->
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/cookies.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body onload="loadDarkMode()"> <!-- Carrega el mode fosc quan la pàgina es carrega -->
+  <!-- Barra de navegació superior -->
+  <div class="topnav" id="Controlbarra">
+    <!-- Links -->
+    <a href="index.html" class="active logo"></a>
+    <a href="index.html">Home</a>
+    <a href="memberships.html">Membres</a>
+    <a href="projects.html">Projectes</a>
+    <a href="map.html">Mapes</a>
+    <a href="contact.html">Contact</a>
+    <!-- Icona per activar/desactivar el mode fosc -->
+    <i id="toggleDarkModeIcon" class="dark-mode-icon fas fa-moon" onclick="toggleDarkMode()"></i>
+     <!-- Icona del menú mòbil -->
+    <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveNavbar()">&#9776;</a>
+  </div>
+  <br><br>
+  <div class="container">
+    <h1>Política de Cookies</h1>
+    <p>Utilitzem cookies al nostre lloc web per millorar la teva experiència i per proporcionar-te contingut i publicitat personalitzats. En continuar utilitzant el nostre lloc web, acceptes el nostre ús de cookies.</p>
+    <h2>Què són les cookies?</h2>
+    <p>Les cookies són petits fitxers de text que s'emmagatzemen al teu dispositiu quan visites un lloc web. Permeten que el lloc web recordi les teves preferències i accions amb el temps, de manera que no hagis de tornar-les a introduir cada vegada que visites el lloc.</p>
+    <h2>Com utilitzem les cookies?</h2>
+    <p>Utilitzem les cookies per a una varietat de finalitats, incloent-hi:</p>
+    <ul>
+      <li>Per recordar les teves preferències i configuracions.</li>
+      <li>Per analitzar com s'utilitza el nostre lloc web i millorar-ne el rendiment i la funcionalitat.</li>
+      <li>Per proporcionar-te contingut i publicitat personalitzats.</li>
+    </ul>
+    <h2>Quins tipus de cookies utilitzem?</h2>
+    <p>Utilitzem els següents tipus de cookies:</p>
+    <ul>
+      <li><strong>Cookies de sessió:</strong> Aquestes són cookies temporals que s'esborren quan tanques el teu navegador.</li>
+      <li><strong>Cookies persistents:</strong> Aquestes cookies es mantenen al teu dispositiu fins que caduquen o les elimines.</li>
+    </ul>
+    <h2>Com pots gestionar les cookies?</h2>
+    <p>Pots gestionar les cookies ajustant la configuració del teu navegador. No obstant això, si desactives les cookies, pot afectar la funcionalitat del nostre lloc web i d'altres llocs web que visitis.</p>
+    <p>Per aprendre més sobre com gestionar les cookies, si us plau, visita <a href="https://www.aboutcookies.org/">aboutcookies.org</a>.</p>
+  </div>
+  <br><br>
+  <!--Peu de pàgina-->
+  <footer class="footer">
+    <div class="group-1">
+      <div class="angle-box">
+        <figure>
+          <a href="#">
+            <img src="fotos/logo_URV.png" alt="Logo URV">
+          </a>
+        </figure>
+      </div>
+      <div class="angle-box">
+        <h2>NOSALTRES</h2>
+        <p>Empresa compromesa amb la qualitat i la innovació</p>
+        <p>Tel. 977 777 666</p> 
+      </div>
+      <div class="angle-box">
+        <h2>SEGUEIX-NOS</h2>
+        <div class="social-angle">
+          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+          <a href="https://twitter.com/" class="fa fa-twitter"></a>
+          <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        </div>
+      </div>
+    </div>
+    <div class="group-2">
+      <small>&copy; 2024 <b>PVS S.L.</b> - <a href="drets.html" class="drets">Tots els Drets Reservats</a>.</small> 
+    </div>
+  </footer>
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><i class="arrow up"></i></button> <!-- Botó de retonr a dalt -->
+  <!-- Missatge cookies -->
+  <div id="cookie-message">
+    Aquest lloc web utilitza cookies per millorar l'experiència de l'usuari. En continuar utilitzant 
+    aquest lloc, acceptes el nostre ús de <a href="pol_cookies.html">cookies</a>.
+    <button id="accept-cookie">Acceptar</button>
+    <button id="denegar-cookie">Denegar</button>
+  </div>
+</body>
+</html>

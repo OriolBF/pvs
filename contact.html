@@ -1,0 +1,116 @@
+<!-- Apartat de Contecte. Aquesta secció permet als visitants de la pàgina web 
+posar-se en contacte amb els investigadors o responsables del projecte. Això 
+facilita la comunicació directa amb l'equip responsable i proporciona una via per 
+a preguntes o col·laboracions futures. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contacte</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="fotos/icona_inici.png">
+  <!-- Estils css -->
+  <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+  <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+  <link rel="stylesheet" type="text/css" href="css/contact.css"/>
+  <link rel="stylesheet" type="text/css" href="css/cookies.css"/>
+  <!-- Estils js -->
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/cookies.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+<body onload="loadDarkMode()"> <!-- Carrega el mode fosc quan la pàgina es carrega -->
+  <!-- Barra de navegació superior -->
+  <div class="topnav" id="Controlbarra">
+    <!-- Links -->
+    <a href="index.html" class="active logo"></a>
+    <a href="index.html">Home</a>
+    <a href="memberships.html">Membres</a>
+    <a href="projects.html">Projectes</a>
+    <a href="map.html">Mapes</a>
+    <a href="contact.html" class="actual">Contact</a>
+    <!-- Icona per activar/desactivar el mode fosc -->
+    <i id="toggleDarkModeIcon" class="dark-mode-icon fas fa-moon" onclick="toggleDarkMode()"></i>
+     <!-- Icona del menú mòbil -->
+    <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveNavbar()">&#9776;</a>
+  </div>
+  <div class="container">
+    <!-- Capçalera -->
+    <div style="text-align:center">
+      <h2>Contacta'ns</h2>
+    </div>
+    <!-- Divisió en files per a organitzar el contingut en dues columnes -->
+    <div class="row">
+      <!-- Primera columna amb imatge -->
+      <div class="column">
+        <img src="fotos/Img14.jpg" style="width:100%">
+      </div>
+      <!-- Segona columna amb el formulari de contacte -->
+      <div class="column">
+        <form id="contactForm">
+          <label for="nom">Nom:</label>
+          <input type="text" id="nom" name="firstname" placeholder="Nom..." required>
+          <label for="cognom">Cognoms:</label>
+          <input type="text" id="cognom" name="lastname" placeholder="Cognoms...">
+          <label for="email">Correu:</label>
+          <input type="email" id="email" name="email" placeholder="hola@gmail.com" required>
+          <label for="motiu">Motiu:</label>
+          <!-- Selecció del motiu del contacte -->
+          <select id="motiu" name="motiu">
+            <option value="sol_colab">Sol·licitud de col·laboració.</option>
+            <option value="mes_info">Informació sobre publicacions.</option>
+            <option value="problemes">Problemes tècnics amb el lloc web.</option>
+            <option value="preg_inv">Pregunta sobre la investigació.</option>
+            <option value="altres">Altres.</option>
+          </select>
+          <label for="missatge">Missatge:</label>
+          <textarea id="missatge" name="subject" placeholder="Escriu algun suggeriment..." style="height:120px"></textarea>
+          <!-- Botó per enviar el formulari -->
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--Peu de pàgina-->
+  <footer class="footer">
+    <div class="group-1">
+      <div class="angle-box">
+        <figure>
+          <a href="#">
+            <img src="fotos/logo_URV.png" alt="Logo URV">
+          </a>
+        </figure>
+      </div>
+      <div class="angle-box">
+        <h2>NOSALTRES</h2>
+        <p>Empresa compromesa amb la qualitat i la innovació</p>
+        <p>Tel. 977 777 666</p> 
+      </div>
+      <div class="angle-box">
+        <h2>SEGUEIX-NOS</h2>
+        <div class="social-angle">
+          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+          <a href="https://twitter.com/" class="fa fa-twitter"></a>
+          <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        </div>
+      </div>
+    </div>
+    <div class="group-2">
+      <small>&copy; 2024 <b>Oriol Boronat Fernàndez</b> - <a href="drets.html" class="drets">Tots els Drets Reservats</a>.</small> 
+    </div>
+  </footer>
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><i class="arrow up"></i></button> <!-- Botó de retonr a dalt -->
+  <!-- Missatge cookies -->
+  <div id="cookie-message">
+    Aquest lloc web utilitza cookies per millorar l'experiència de l'usuari. En continuar utilitzant 
+    aquest lloc, acceptes el nostre ús de <a href="pol_cookies.html">cookies</a>.
+    <button id="accept-cookie">Acceptar</button>
+    <button id="denegar-cookie">Denegar</button>
+  </div>
+</body>
+</html>

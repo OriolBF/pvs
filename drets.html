@@ -1,0 +1,124 @@
+<!-- Apartat dels Drets Reservats. Aquesta secció té com a objectiu 
+informar els visitants dels drets de propietat intel·lectual i altres 
+drets legals relacionats amb el contingut i l'ús del lloc web. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drets Reservats</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="fotos/icona_inici.png">
+  <!-- Estils css -->
+  <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+  <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+  <link rel="stylesheet" type="text/css" href="css/drets.css"/>
+  <link rel="stylesheet" type="text/css" href="css/cookies.css"/>
+  <!-- Estils js -->
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/drets.js"></script>
+  <script src="js/cookies.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body onload="loadDarkMode()"> <!-- Carrega el mode fosc quan la pàgina es carrega -->
+  <!-- Barra de navegació superior -->
+  <div class="topnav" id="Controlbarra">
+    <!-- Links -->
+    <a href="index.html" class="active logo"></a>
+    <a href="index.html">Home</a>
+    <a href="memberships.html">Membres</a>
+    <a href="projects.html">Projectes</a>
+    <a href="map.html">Mapes</a>
+    <a href="contact.html">Contact</a>
+    <!-- Icona per activar/desactivar el mode fosc -->
+    <i id="toggleDarkModeIcon" class="dark-mode-icon fas fa-moon" onclick="toggleDarkMode()"></i>
+     <!-- Icona del menú mòbil -->
+    <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveNavbar()">&#9776;</a>
+  </div>
+  <br><br>
+  <!-- Container amb la informació dels drets reservats -->
+  <div class="container">
+    <h1>Drets Reservats</h1>  
+    <h2>Titular del lloc web</h2>
+    <p>Les dades identificatives del responsable del present lloc web són: PVS S.L. 
+      (“PVS” d'ara endavant) amb CIF B71146484, inscrita en el Registre Mercantil de Navarra, amb el document número 
+      1/2013/6.209,0, assegut 2013/4872 de data 27/08/2013 en el tomo 1684, llibre 0, full 198, fulla NA-33412, inscripció 
+      1 i domicili a c/ Diego Mina, 8 5ºC – 31620 Huarte (NA).</p>
+    <h2>Condicions d'ús</h2>
+    <p>Les següents disposicions regulen l'accés i ús d'aquest lloc web. La navegació per aquest lloc web atribueix la condició 
+      d'usuari a tota persona física interessada en els productes i serveis d'aquesta pàgina i implica l'acceptació plena i 
+      sense reserves del present avís legal.</p>
+    <p>L'usuari es compromet a fer un ús adequat i lícit del lloc web, dels seus continguts i serveis, de conformitat amb 
+      la legislació aplicable, les presents condicions d'ús, la moral i els bons costums generalment acceptats i l'ordre 
+      públic. Queda prohibit qualsevol ús amb finalitat il·lícita, prohibida o contrària als drets i interessos de PVS S.L. o de tercers.</p>
+    <h2>Propietat intel·lectual</h2>
+    <p>Tots els drets sobre el contingut del present lloc web pertanyen a PVS S.L.. El disseny, continguts, textos, fotografies, 
+      imatges, mapes, gràfics, marques, noms comercials, il·lustracions, banners, estructura de pàgina i de navegació, o codi 
+      font d'aquest lloc són titularitat de PVS, que posseeix legítimament els drets d'explotació pertinents.</p>
+    <p>Queda prohibit utilitzar, reproduir, modificar, distribuir o comunicar públicament qualsevol part del contingut d'aquest 
+      lloc web sense el consentiment exprés de PVS. L'ús no autoritzat del contingut d'aquest lloc pot constituir una violació de 
+      les lleis de propietat intel·lectual i podrà donar lloc a accions legals.</p>
+    <h2>Exempció de responsabilitat</h2>
+    <p>Intentem oferir informació útil i actualitzada, però no podem garantir la completa veracitat, exactitud, 
+      actualització i operativitat de tots els continguts i serveis. Eludim per tant tot tipus de responsabilitat 
+      pels possibles danys o perjudicis de qualsevol mena que els usuaris poguessin patir per la utilització de dades 
+      incompletes, inexactes o desactualitzades, o per la possible suspensió, cancel·lació o inoperativitat dels seus 
+      continguts o serveis (art 17.1 de la LSSI-CE).</p>
+    <p>Cap disposició d'aquesta pàgina exclou o limita la nostra responsabilitat per mort o lesions personals causades 
+      per la nostra negligència o per qualsevol altra responsabilitat que no pugui ser exclòs o limitat per la legislació aplicable.</p>
+    <h2>Enllaços</h2>
+    <p>Els enllaços externs que condueixen a altres llocs web s'ofereixen sense cap ànim de lucre amb l'únic 
+      objectiu de millorar la informació a l'usuari.</p>
+    <p>No ens fem responsables del contingut dels llocs web enllaçats, ni de les possibles modificacions que 
+      puguin realitzar-se en ells. Tampoc podem garantir l'absència de virus o altres elements nocius en aquests 
+      llocs. És responsabilitat de l'usuari prendre les precaucions necessàries abans de seguir els enllaços.</p>
+    <h2>Jurisdicció aplicable</h2>
+    <p>Qualsevol relació entre l'usuari i PVS S.L. es regirà i interpretarà d'acord amb la legislació espanyola. 
+      En cas de conflicte, les parts es sotmetran als Jutjats i Tribunals que resultin competents en cada 
+      moment i sempre que la legislació aplicable ho permeti i si tinguessin possibilitat d'això, se sotmetran 
+      voluntàriament als Jutjats i Tribunals de Navarra.</p>
+    <p>Aquesta disposició no afecta els drets legals dels consumidors segons la legislació aplicable.</p>
+    <p>&copy; <span id="year"></span> PVS S.L. Tots els Drets Reservats.</p>
+  </div>
+  <br><br>
+  <!--Peu de pàgina-->
+  <footer class="footer">
+    <div class="group-1">
+      <div class="angle-box">
+        <figure>
+          <a href="#">
+            <img src="fotos/logo_URV.png" alt="Logo URV">
+          </a>
+        </figure>
+      </div>
+      <div class="angle-box">
+        <h2>NOSALTRES</h2>
+        <p>Empresa compromesa amb la qualitat i la innovació</p>
+        <p>Tel. 977 777 666</p> 
+      </div>
+      <div class="angle-box">
+        <h2>SEGUEIX-NOS</h2>
+        <div class="social-angle">
+          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+          <a href="https://twitter.com/" class="fa fa-twitter"></a>
+          <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        </div>
+      </div>
+    </div>
+    <div class="group-2">
+      <small>&copy; 2024 <b>PVS S.L.</b> - <a href="drets.html" class="drets">Tots els Drets Reservats</a>.</small> 
+    </div>
+  </footer>
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><i class="arrow up"></i></button> <!-- Botó de retonr a dalt -->
+  <!-- Missatge cookies -->
+  <div id="cookie-message">
+    Aquest lloc web utilitza cookies per millorar l'experiència de l'usuari. En continuar utilitzant 
+    aquest lloc, acceptes el nostre ús de <a href="pol_cookies.html">cookies</a>.
+    <button id="accept-cookie">Acceptar</button>
+    <button id="denegar-cookie">Denegar</button>
+  </div>
+</body>
+</html>
