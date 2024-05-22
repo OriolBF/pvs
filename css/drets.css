@@ -1,0 +1,63 @@
+/*FONTS*/
+body {
+  background-color: #ffffff; 
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  overflow-x: hidden; 
+}
+
+/* Estil per al contenidor principal */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+/* Estil per als títols de primer nivell */
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Estil per al text paragraf */
+p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Estil per a les llistes no numerades */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Estil per als elements de la llista */
+li {
+  margin-bottom: 10px;
+}
+
+/* Estil per a l'indicador de llista personalitzat */
+li::before {
+  content: '\25CF';
+  margin-right: 10px;
+}
+
+/* Estil per als enllaços */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Estil dels enllaços al passar el ratolí per sobre */
+a:hover {
+  text-decoration: underline;
+}

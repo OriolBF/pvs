@@ -1,0 +1,63 @@
+/*FONTS*/
+body {
+  background-color: #ffffff; 
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  overflow-x: hidden; 
+}
+
+/* Estils per al contenidor principal */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+/* Estils per a títols */
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Estils per a paràgrafs */
+p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Estils per a llistes desordenades */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Estils per als elements de la llista */
+li {
+  margin-bottom: 10px;
+}
+
+/* Estils per als punts de la llista */
+li::before {
+  content: '\25CF';
+  margin-right: 10px;
+}
+
+/* Estils per als enllaços */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Estils per als enllaços quan es passa el ratolí sobre ells */
+a:hover {
+  text-decoration: underline;
+}

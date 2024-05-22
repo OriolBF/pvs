@@ -1,0 +1,114 @@
+/*FONTS*/
+body {
+  background-color: #ffffff; 
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  overflow-x: hidden; 
+}
+
+/* Estils per a parallax */
+.parallax {
+  /* Imatge de fons */
+  background-image: url("../fotos/Img1.jpg");
+  /* Alçada mínima */
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Estils per a la disposició dels elements */
+*{box-sizing: border-box;}
+
+.container {
+  padding: 64px;
+  margin-top: -20px;
+}
+
+.container2 {
+  padding: 84px;
+  margin-top: -120px;
+  margin-bottom: -60px;
+}
+
+.row2:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+/* Estils per a la font introductòria */
+.intro-font{
+  font-size:20px;
+}
+
+/* Estils per a la font gran */
+.large-font {
+  font-size: 38px;
+}
+
+/* Estils per al text justificat */
+.text-font{
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* Estils per a text subratllat */
+.text-span{
+  text-align: justify;
+  text-decoration: underline;
+  text-align: justify;
+}
+
+/* Estils per a les imatges */
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Estilos para las columnas responsivas */
+@media screen and (max-width: 1150px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    padding: 0; 
+    float: none;
+    margin-bottom: 20px;
+  }
+  .container {
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+  .row2 {
+    margin: 20px;
+    padding: 0;
+  }
+  .container2 {
+    padding: 0 30px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Estils per a pantalles més petites de 750 píxels */
+@media (max-width: 750px) {
+  .parallax {
+    /* Redueix l'alçada mínima */
+    min-height: 300px; 
+  }
+}

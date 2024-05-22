@@ -1,0 +1,137 @@
+/* Peu de pàgina */
+.footer{
+  width: 100%;
+  background-color: #50585f;
+}
+
+/* Grup 1 del peu de pàgina */
+.footer .group-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:50px;
+  padding: 45px 0px;
+}
+
+/* Estil dels elements de la secció 'angle-box' */
+.footer .group-1 .angle-box figure{
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estil de les imatges dins de 'angle-box' */
+.footer .group-1 .angle-box figure img{
+  width: 150px;
+}
+
+/* Estil dels títols dins de 'angle-box' */
+.footer .group-1 .angle-box h2{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+/* Estil dels paràgrafs dins de 'angle-box' */
+.footer .group-1 .angle-box p{
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+/* Estil dels enllaços socials */
+.footer .group-1 .social-angle a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #222324;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+/* Estil dels enllaços socials al passar el ratolí per sobre */
+.footer .group-1 .social-angle a:hover{
+  color: #9b8d8d;
+}
+
+/* Estil del grup 2 del peu de pàgina */
+.footer .group-2{
+  background-color: #222324;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Estil del text dins del grup 2 del peu de pàgina */
+.footer .group-2 small{
+  font-size: 15px;
+}
+
+/* Mitjans de comunicació: Estil del peu de pàgina en pantalles més petites */
+@media screen and (max-width:800px){
+  .footer .group-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+      text-align: center;
+      justify-content: center;
+  }
+}
+
+/* Botó per tornar a dalt de la pàgina */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estil del botó de tornar a dalt */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #464646; 
+  color: white;
+  cursor: pointer; 
+  padding: 15px;
+  border-radius: 4px;
+  z-index: 100000;
+}
+
+/* Estil del botó quan es passa el ratolí per sobre */
+#scrollToTopBtn:hover {
+  background-color: #acacac;
+}
+
+/* Estil de la fletxa dins del botó */
+.arrow {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+/* Estil de la fletxa apuntant cap amunt */
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.drets{
+  color:#8ed4fd;
+}
+
+.drets:hover {
+  color:#42b7fa;
+  text-decoration: underline;
+}

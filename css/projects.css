@@ -1,0 +1,76 @@
+/*FONTS*/
+body {
+  background-color: #ffffff; 
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  overflow-x: hidden; 
+}
+
+#demo {
+  margin-top: 30px; /* Marge superior per al carrusel */
+}
+
+/* Ajust de la marge superior del carrusel per a pantalles més petites */
+@media (max-width: 1600px) {
+  #demo {
+    margin-top: 65px;
+  }
+}
+
+/* Configuració general per a tots els elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Configuració del contenidor principal */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Mode fosc container */
+.dark-mode .card {
+  background-color: #a7a5a5;
+}
+
+/* Estil per a la columna */
+.column {   
+  width: 100%; 
+}
+
+/* Estil per a una imatge falsa (per a les imatges dels articles) */
+.projectimg {
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+/* Ajust de la grandària de la imatge i del container per a pantalles més petites */
+@media (max-width: 700px) {
+  .projectimg {
+    width: 80%;
+  }
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+/* Afegir un efecte de targeta per als articles */
+.card {
+   background-color: rgb(250, 250, 250);
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Estil del text */
+.text-font{
+  text-align: justify;
+  line-height: 1.5;
+}

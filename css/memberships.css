@@ -1,0 +1,101 @@
+/* Fonts i Estil General */
+body {
+  background-color: #ffffff; 
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  overflow-x: hidden; 
+}
+
+/* Imatges Responsives */
+.topimg {
+  width: 100%;
+  height: auto;
+}
+
+/* Estil per a les Cartes */
+.card1, .card2, .card3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  max-width: 320px;
+  margin: auto;
+  text-align: center;
+}
+
+.name{
+  margin-top: 10px;
+}
+
+/* Títols i Informació de la Universitat */
+.title {
+  color: grey;
+  font-size: 18px;
+  margin-top: -20px;
+}
+
+.university{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.faculty{
+  font-size: 14px;
+    font-style: italic;
+}
+
+.social{
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+/* Estil per als Enllaços de Xarxes Socials */
+.socialink {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+/* Efectes de Passada del Ratolí */
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/* Box Sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Estil del Contenidor Flex */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Estil dels Elements Flex */
+.flex-item {
+  padding: 10px;
+  flex: 33%;
+}
+
+/* Disseny Responsiu 2 columnes */
+@media (max-width: 1200px) {
+  .flex-container {
+    flex-direction: row;
+  }
+  .flex-item {
+    flex: 50%; 
+  }
+}
+
+/* Disseny Responsiu 1 columna */
+@media (max-width: 800px) {
+  .flex-item {
+    flex: 100%;
+  }
+  /* Imatges Responsives */
+  .topimg {
+    margin-top: 30px;
+    min-height: 220px;
+  }
+}

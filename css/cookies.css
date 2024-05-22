@@ -1,0 +1,19 @@
+/* Estil per a l'element amb l'ID "cookie-message" */
+#cookie-message {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+
+/* Estil per als enllaços dins de l'element amb l'ID "cookie-message" */
+#cookie-message a {
+  color: rgb(52, 52, 253);
+  text-decoration: underline; /* Para subrayar el enlace */
+  font-weight: bold;
+}

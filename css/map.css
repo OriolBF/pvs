@@ -1,0 +1,126 @@
+/*FONTS*/
+body {
+  background-color: #ffffff; 
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/*Parallax*/
+.parallax {
+  background-image: url("../fotos/Img11.jpg");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Estils per a la disposició dels elements */
+*{box-sizing: border-box;}
+
+/* Estils per als contenidors d'inici */
+.containerinici {
+  padding: 83px;
+  margin-top: -60px;
+  margin-bottom: -150px;
+}
+
+/* Estils per als contenidors principals */
+.container {
+  padding: 64px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row2:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+/* Estils per als títols */
+.titol-font{
+  text-align: justify;
+}
+
+/* Estils per als paràgrafs inicials */
+.text-fontinici{
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* Estils per als altres paràgrafs */
+.text-font{
+  text-align: justify;
+  line-height: 1.5;
+  margin-top: -5px;
+}
+
+/* Estils per a les columnes responsives */
+@media screen and (max-width: 1150px) {
+  .column-66,
+  .column-33 {
+    width: 100%; 
+    padding: 0; 
+    float: none;
+    margin-bottom: 20px;
+  }
+  .titol-font{
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+  .text-fontinici{
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+}
+
+/* Mapa */
+#map { 
+  width: 100%;
+  height: 550px;
+  box-shadow: 5px 5px 5px #888;
+}
+
+@media screen and (max-width: 768px) {
+  #map {
+    height: 400px;
+    width: 100%; 
+    padding: 0; 
+    float: none;
+    margin-bottom: 20px;
+  }
+  .containerinici{
+    padding: 0 50px; /* Ajusta el relleno del contenedor */
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .container{
+    padding: 0 30px; /* Ajusta el relleno del contenedor */
+  }
+}
+
+/* Estils per a pantalles més petites de 750 píxels */
+@media (max-width: 750px) {
+  .parallax {
+    /* Redueix l'alçada mínima */
+    background-image: url("../fotos/Img15.png");
+    min-height: 300px;
+  }
+}
+
+

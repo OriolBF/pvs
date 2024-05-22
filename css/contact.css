@@ -1,0 +1,83 @@
+/*FONTS*/
+body {
+  background-color: #ffffff; 
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Configuració general per a tots els elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Estil dels inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Estil dels inputs de tipus correu electrònic */
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Estil del botó de enviar */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Efecte de canvi del botó de enviar al passar el ratolí */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Estil del contenidor de contacte */
+.container {
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: -10px;
+}
+
+/* Creació de dues columnes amb float al costat una de l'altra */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Neteges després de les columnes */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Disseny responsiu - quan la pantalla té menys de 900px d'amplada, les dues columnes es col·loquen una sobre l'altra en lloc de ser al costat */
+@media screen and (max-width: 900px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Imatge responsiva */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
